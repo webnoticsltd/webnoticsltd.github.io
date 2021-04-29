@@ -70,7 +70,7 @@
    <script src="./min.js"></script>
    <script src="./main.js"> </script>
     <script>
-        const scene, camera, renderer, starGeo, stars;
+        let scene, camera, renderer, starGeo, stars;
         function init() {
             //create scene object
             scene = new THREE.Scene();
@@ -97,7 +97,7 @@
                 star.acceleration = 0.02; // change the speed
                 starGeo.vertices.push(star);
             }
-            let sprite = new THREE.TextureLoader().load('image/S-A.jpg');
+            //let sprite = new THREE.TextureLoader().load('image/S-A.jpg');
             let starMaterial = new THREE.PointsMaterial({
                 color: 0xaaaaaa,
                 size: 1,
