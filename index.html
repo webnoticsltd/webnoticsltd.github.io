@@ -97,12 +97,12 @@
                 star.acceleration = 0.02; // change the speed
                 starGeo.vertices.push(star);
             }
-            //let sprite = new THREE.TextureLoader().load('image/S-A.jpg');
-            //let starMaterial = new THREE.PointsMaterial({
-                //color: 0xaaaaaa,
-                //size: 1,
-                //map: sprite
-            //});
+            let sprite = new THREE.TextureLoader().load('image/S-A.jpg');
+            let starMaterial = new THREE.PointsMaterial({
+                color: 0xaaaaaa,
+                size: 1,
+                map: sprite
+            });
 
             stars = new THREE.Points(starGeo, starMaterial);
             scene.add(stars);
